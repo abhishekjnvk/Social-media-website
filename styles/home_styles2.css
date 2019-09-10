@@ -1,0 +1,44 @@
+.message_container{
+  width: 600px;
+  background-color: #FCF3CF;
+  text-align: left;
+  font-weight: bold;
+}
+.message_container_sender {
+height: 20px;
+background-color: #A9DFBF;
+}
+
+.message_container right{
+float: right;
+margin-right: 5px;
+}
+
+.message_container left{
+float: left;
+margin-left: 5px;
+}
+#view_message{
+float: right;
+}
+.message_container_content textarea{
+  resize: vertical;
+  margin-left: 10px;
+  margin-top: 25px;
+  background-color: #FFDAB9;
+  margin-bottom: 10px;
+}
+.message_container_reciver {
+height: 20px;
+}
+.message_container_subject {
+height: 35px;
+background-color: #F6DDCC;
+}
+.message_container_content,{
+background-color: #5DADE2;
+}
+.profile_pic_user{
+background-color: blue;
+float: right;
+}

@@ -1,0 +1,82 @@
+.chatpage
+{
+  margin-left: 250px;
+}
+.chat_friend{
+  background-color:#D0D3D4;
+  width: 15%;
+  display: inline-block;
+  margin-left: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  float: left;
+
+}
+.chat_friend friendName{
+
+font-style: italic;
+font-family: cursive;
+margin-left: 5px;
+}
+.chat_friend profile{
+font-style: italic;
+font-family: cursive;
+float: right;
+margin-right: 10px;
+}
+.chat-content{
+    background-color:#D4EFDF;
+    padding: 5px;
+    width:40%;
+    display: inline-block;
+    margin-left: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    float: left;
+  	position: fixed;
+  	right: 10%;
+}
+.chat-content textarea{
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  width: 83%;
+  background-color: #FCF3CF;
+  resize: none;
+}
+.chat input{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  background-color:#5499C7;
+}
+
+
+#close{
+  float: right;
+  width: 52px;
+  border-radius: 4px;
+}
+
+
+#delete_chat{
+  float:left;
+}
+#recived{
+  margin-top: 2px;
+  float: right;
+  width: 100%;
+  background-color: #FAD7A0;
+  text-align: right;
+}
+#sent{
+  margin-top: 2px;
+  float: left;
+  background-color: #F9E79F;
+  width: 100%;
+  padding-top: 5px;
+}

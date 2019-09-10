@@ -1,0 +1,40 @@
+<?php
+session_start();
+include ("includes/connection.php");
+include ("functions/functions.php");
+?>
+<!DOCTYPE html>
+<?php
+	if (!isset($_SESSION['user_email'])) {
+		# code...
+		header("location: index.php");
+	}else
+	{
+
+?>
+<html>
+<head>
+	<title>Welcome Users!</title>
+	<link rel="stylesheet" type="text/css" href="styles/home_styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container">
+		<?php
+		include ("templates/menu.php");
+		 ?>
+		 	<div id="content_timeline">
+				<form action="home.php?id=<?php echo $user_id; ?>" method="post" id="f">
+					<textarea cols="83" rows="4" name="content" placeholder="What is on your mind ?"></textarea><br />
+					<input type="submit" name="sub" value="Post" style="width: 100px">
+				</form>
+				<?php insertPost() ?>
+				<center><h2>News Feed</h2></center>
+				<?php get_posts() ?>
+			</div>
+		</div>
+	</div>
+	<?php include ('footer.php') ?>
+</body>
+</html>
+<?php } ?>
